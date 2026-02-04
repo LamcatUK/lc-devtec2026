@@ -1,0 +1,32 @@
+.lc_usps {
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: var(--border-sm);
+    box-shadow: var(--shadow-1);
+    background-color: var(--col-ivory);
+    height: 100%;
+  }
+
+  &__card-title {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-500);
+    margin-bottom: 0.75rem;
+  }
+
+  &__card-content {
+    font-size: var(--fs-350);
+  }
+}
+
+// Custom 5-column layout for large screens
+@media (min-width: 992px) {
+  .col-lg-custom-5 {
+    flex: 0 0 auto;
+    width: 20%; // 100% / 5 = 20%
+  }
+}

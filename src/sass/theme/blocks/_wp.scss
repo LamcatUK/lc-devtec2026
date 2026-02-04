@@ -1,0 +1,10 @@
+blockquote {
+    max-width: 80vw;
+    text-align: center;
+    margin-inline: auto;
+    margin-top: 1rem;
+    p {
+        font-family: var(--ff-headings);
+        color: var(--col-purple-400);
+    }
+}

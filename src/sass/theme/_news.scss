@@ -1,0 +1,111 @@
+.news {
+  &__card {
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    aspect-ratio: 9 / 6;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  &__meta {
+    margin-bottom: 0.25rem;
+  }
+  h3 {
+    transition: color var(--transition);
+  }
+  a {
+    color: var(--col-black);
+    &:hover {
+      h3 {
+        color: var(--col-purple-400);
+      }
+    }
+  }
+}
+
+.blog {
+  &__image {
+    border-radius: 0.5rem;
+  }
+}
+
+.navigation {
+  box-shadow:
+    rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: fit-content;
+  border-radius: 0.25rem;
+  ul {
+    list-style: none;
+    display: flex;
+    padding-inline-start: 0;
+  }
+  li {
+    border: 1px solid var(--col-green-400);
+    border-right: none;
+    background-color: white;
+    &.active {
+      background-color: var(--col-blue-400);
+      a {
+        cursor: default;
+        font-weight: 600;
+      }
+    }
+    &:first-of-type {
+      border-top-left-radius: 0.25rem;
+      border-bottom-left-radius: 0.25rem;
+    }
+    &:last-of-type {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+      border-right: 1px solid var(--col-green-400);
+    }
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+  }
+}
+
+.related {
+  &__card {
+    text-decoration: none;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    color: var(--col-black);
+    &:hover {
+      .related__image {
+        transform: scale(1.05);
+      }
+    }
+    border-bottom: 1px solid hsl(var(--hsl-purple-400) / 0.5);
+  }
+
+  &__image {
+    aspect-ratio: 9 / 6;
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 300ms ease;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.blog {
+  &__image {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 300ms ease;
+    margin-bottom: 0.5rem;
+  }
+  &__content > .container-xl {
+    padding-inline: 0;
+  }
+}
