@@ -4,7 +4,7 @@
  *
  * This file defines and registers custom taxonomies.
  *
- * @package lc-mindspace2025
+ * @package lc-devtec2026
  */
 
 /**

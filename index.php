@@ -2,7 +2,7 @@
 /**
  * The main template file
  *
- * @package lc-mindspace2025
+ * @package lc-devtec2026
  */
 
 defined( 'ABSPATH' ) || exit;

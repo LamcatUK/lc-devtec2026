@@ -2,7 +2,7 @@
 /**
  * Integrate ACF color picker fields with the theme's color palette.
  *
- * @package lc-mindspace2025
+ * @package lc-devtec2026
  */
 
 // Field name: background.

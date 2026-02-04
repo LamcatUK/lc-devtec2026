@@ -70,7 +70,7 @@ add_action( 'wp_enqueue_scripts', 'lc_enqueue_theme_js', 20 );
  * Load the child theme's text domain
  */
 function add_child_theme_textdomain() {
-    load_child_theme_textdomain( 'lc-mindspace2025', get_stylesheet_directory() . '/languages' );
+    load_child_theme_textdomain( 'lc-devtec2026', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 

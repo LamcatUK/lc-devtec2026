@@ -1,5 +1,5 @@
 {
-  "name": "lc-mindspace2025",
+  "name": "lc-devtec2026",
   "version": "1.2.0",
   "description": "Basic Child Theme for Understrap Theme Framework: https://github.com/understrap/understrap",
   "main": "index.js",
@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/understrap/lc-mindspace2025.git"
+    "url": "https://github.com/understrap/lc-devtec2026.git"
   },
   "keywords": [
     "wordpress",
@@ -48,7 +48,7 @@
   "author": "The Understrap Authors (https://github.com/understrap/understrap/graphs/contributors)",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/understrap/lc-mindspace2025/issues"
+    "url": "https://github.com/understrap/lc-devtec2026/issues"
   },
   "homepage": "https://understrap.com",
   "devDependencies": {

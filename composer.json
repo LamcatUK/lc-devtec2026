@@ -1,5 +1,5 @@
 {
-  "name": "understrap/lc-mindspace2025",
+  "name": "understrap/lc-devtec2026",
   "description": "Basic Child Starter Theme for Understrap",
   "type": "wordpress-theme",
   "license": "GPL-3.0",
@@ -9,11 +9,11 @@
     "theme",
     "bootstrap"
   ],
-  "homepage": "https://github.com/understrap/lc-mindspace2025",
+  "homepage": "https://github.com/understrap/lc-devtec2026",
   "authors": [
     {
       "name": "Contributors",
-      "homepage": "https://github.com/understrap/lc-mindspace2025/contributors.md"
+      "homepage": "https://github.com/understrap/lc-devtec2026/contributors.md"
     }
   ],
   "require": {

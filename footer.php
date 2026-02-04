@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * @package lc-mindspace2025
+ * @package lc-devtec2026
  */
 
 defined( 'ABSPATH' ) || exit;
