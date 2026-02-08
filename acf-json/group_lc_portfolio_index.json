@@ -1,0 +1,23 @@
+{
+  "key": "group_lc_portfolio_index",
+  "title": "LC Portfolio Index",
+  "fields": [
+    {
+      "key": "field_lc_portfolio_index_title",
+      "label": "LC Portfolio Index",
+      "name": "title",
+      "type": "message"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "block",
+        "operator": "==",
+        "value": "acf/lc-portfolio-index"
+      }
+    ]
+  ],
+  "active": 1,
+  "description": ""
+}

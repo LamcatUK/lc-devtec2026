@@ -1,0 +1,8 @@
+.image-text-cards {
+  &__card-image {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    filter: saturate(0.75) contrast(0.95);
+  }
+}

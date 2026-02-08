@@ -1,0 +1,10 @@
+.contact-block {
+  a {
+    color: var(--col-black);
+    text-decoration: none;
+    transition: color var(--transition);
+    &:hover {
+      color: var(--col-accent-400);
+    }
+  }
+}

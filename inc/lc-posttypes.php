@@ -14,37 +14,36 @@
  */
 function lc_register_post_types() {
 
-	// phpcs:disable
-	/*
-
 	register_post_type(
-		'testimonial',
+		'project',
 		array(
-			'labels'          => array(
-				'name'               => 'Testimonials',
-				'singular_name'      => 'Testimonial',
-				'add_new_item'       => 'Add New Testimonial',
-				'edit_item'          => 'Edit Testimonial',
-				'new_item'           => 'New Testimonial',
-				'view_item'          => 'View Testimonial',
-				'search_items'       => 'Search Testimonials',
-				'not_found'          => 'No testimonials found',
-				'not_found_in_trash' => 'No testimonials in trash',
+			'labels'             => array(
+				'name'               => 'Projects',
+				'singular_name'      => 'Project',
+				'add_new_item'       => 'Add New Project',
+				'edit_item'          => 'Edit Project',
+				'new_item'           => 'New Project',
+				'view_item'          => 'View Project',
+				'search_items'       => 'Search Projects',
+				'not_found'          => 'No projects found',
+				'not_found_in_trash' => 'No projects in trash',
 			),
-			'has_archive'     => false,
-			'public'          => false,
-			'show_ui'         => true,
-			'show_in_menu'    => true,
-			'show_in_rest'    => true,
-			'menu_position'   => 26,
-			'menu_icon'       => 'dashicons-testimonial',
-			'supports'        => array( 'title', 'editor' ),
-			'capability_type' => 'post',
-			'map_meta_cap'    => true,
-			'rewrite'         => false,
+			'has_archive'        => false,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'show_in_rest'       => true,
+			'menu_position'      => 26,
+			'menu_icon'          => 'dashicons-portfolio',
+			'supports'           => array( 'title', 'editor', 'thumbnail' ),
+			'capability_type'    => 'post',
+			'map_meta_cap'       => true,
+			'rewrite'            => array(
+				'slug'       => 'portfolio',
+				'with_front' => false,
+			),
 		)
 	);
-	*/
-	// phpcs:enable
 }
 add_action( 'init', 'lc_register_post_types' );

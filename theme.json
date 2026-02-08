@@ -14,55 +14,31 @@
         {
           "name": "black",
           "slug": "black",
-          "color": "#414440",
+          "color": "#1f1f1f",
           "origin": "theme"
         },
         {
-          "name": "ivory",
-          "slug": "ivory",
-          "color": "#faf5ef",
+          "name": "secondary-400",
+          "slug": "secondary-400",
+          "color": "hsl(210 8% 95%)",
           "origin": "theme"
         },
         {
-          "name": "purple-400",
-          "slug": "purple-400",
-          "color": "hsl(284 73% 35%)",
+          "name": "accent-400",
+          "slug": "accent-400",
+          "color": "#99003d",
           "origin": "theme"
         },
         {
-          "name": "purple-200",
-          "slug": "purple-200",
-          "color": "hsl(290 24% 70%)",
+          "name": "accent-500",
+          "slug": "accent-500",
+          "color": "hsl(336, 100%, 30%)",
           "origin": "theme"
         },
         {
-          "name": "pink-400",
-          "slug": "pink-400",
-          "color": "hsl(324 96% 46%)",
-          "origin": "theme"
-        },
-        {
-          "name": "teal-400",
-          "slug": "teal-400",
-          "color": "hsl(190 35% 49%)",
-          "origin": "theme"
-        },
-        {
-          "name": "teal-200",
-          "slug": "teal-200",
-          "color": "hsl(190 33% 69%)",
-          "origin": "theme"
-        },
-        {
-          "name": "gold",
-          "slug": "gold",
-          "color": "#f9ba32",
-          "origin": "theme"
-        },
-        {
-          "name": "coral",
-          "slug": "coral",
-          "color": "hsl(5 100% 69%)",
+          "name": "accent-900",
+          "slug": "accent-900",
+          "color": "hsl(211 9% 48%)",
           "origin": "theme"
         }
       ]
@@ -102,7 +78,7 @@
         {
           "name": "800",
           "slug": "800",
-          "size": "60px"
+          "size": "56px"
         },
         {
           "name": "900",

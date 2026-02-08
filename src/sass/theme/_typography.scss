@@ -4,23 +4,15 @@
   font-family: "Inter";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/inter-v13-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("../fonts/inter-v20-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* inter-500 - latin */
+/* inter-600 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Inter";
   font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/inter-v13-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* marcellus-regular - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Marcellus";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/marcellus-v13-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  font-weight: 600;
+  src: url("../fonts/inter-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 html {
@@ -43,7 +35,7 @@ h4,
 .h4 {
   font-family: var(--ff-headings);
   text-wrap: balance;
-  color: var(--col-blue-900);
+  color: var(--col-black);
 }
 
 h1,
@@ -51,26 +43,26 @@ h1,
   font-size: var(--fs-800);
   line-height: var(--lh-900);
   font-style: normal;
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-600);
 }
 
 h2,
 .h2 {
   font-size: var(--fs-700);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-600);
   font-style: normal;
   line-height: var(--lh-800);
 }
 h3,
 .h3 {
   font-size: var(--fs-600);
-  font-weight: var(--fw-400);
+  font-weight: var(--fw-600);
   line-height: var(--lh-700);
 }
 h4,
 .h4 {
   font-size: var(--fs-500);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-300);
   line-height: var(--lh-700);
 }
 
@@ -89,6 +81,20 @@ strong {
 
 .w-short-45 {
   max-width: 45ch;
+}
+
+.has-top-border {
+  position: relative;
+  padding-block-start: 0.5rem;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 2px;
+    background-color: var(--col-accent-400);
+  }
 }
 
 .has-x-large-font-size,

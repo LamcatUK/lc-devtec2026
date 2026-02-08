@@ -1,0 +1,60 @@
+.text-accordion {
+  .accordion-item {
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .accordion-button {
+    border: none;
+    border-radius: 0;
+    padding-left: 3rem;
+    position: relative;
+    background-color: var(--col-secondary-400);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-medium);
+    box-shadow: none;
+    color: var(--col-black);
+
+    &:hover {
+      color: var(--col-black);
+    }
+
+    &:focus {
+      box-shadow: none;
+      border: none;
+      color: var(--col-black);
+    }
+
+    &:not(.collapsed) {
+      background-color: var(--col-secondary-400);
+      box-shadow: none;
+      color: var(--col-black);
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      content: "+";
+      position: absolute;
+      left: 0.75rem;
+      font-size: 1.5rem;
+      line-height: 1;
+      transition: transform var(--transition);
+    }
+
+    &:not(.collapsed)::before {
+      content: "-";
+    }
+  }
+
+  .accordion-collapse {
+    border: none;
+  }
+
+  .accordion-body {
+    padding-left: 3rem;
+  }
+}
