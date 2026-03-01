@@ -14,16 +14,12 @@
  */
 function lc_register_taxes() {
 
-	// phpcs:disable
-	// Example: Uncomment and modify as needed.
-
-	/*
 	$args = array(
 		'labels'             => array(
-			'name'          => 'Categories',
-			'singular_name' => 'Category',
+			'name'          => 'Project Categories',
+			'singular_name' => 'Project Category',
 		),
-		'public'             => true,
+		'public'             => false,
 		'publicly_queryable' => true,
 		'hierarchical'       => true,
 		'show_ui'            => true,
@@ -34,8 +30,6 @@ function lc_register_taxes() {
 		'show_in_rest'       => true,
 		'rewrite'            => false,
 	);
-	register_taxonomy( 'custom_category', array( 'post' ), $args );
-	*/
-	// phpcs:enable
+	register_taxonomy( 'project_category', array( 'project' ), $args );
 }
 add_action( 'init', 'lc_register_taxes' );

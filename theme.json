@@ -46,6 +46,11 @@
     "typography": {
       "fontSizes": [
         {
+          "name": "200",
+          "slug": "200",
+          "size": "12px"
+        },
+        {
           "name": "300",
           "slug": "300",
           "size": "14px"
