@@ -9,6 +9,7 @@
     aspect-ratio: 16 / 9;
     width: 100%;
     overflow: hidden;
+    position: relative;
   }
   &__image {
     aspect-ratio: 16 / 9;
@@ -16,6 +17,18 @@
     object-fit: cover;
     transform: scale(1);
     transition: transform var(--transition);
+  }
+  .project-card__pill {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background-color: var(--col-accent-400);
+    color: var(--col-white);
+    padding: 0.25rem 0.75rem;
+    font-size: var(--fs-200);
+    font-weight: var(--fw-600);
+    border-radius: 100vw;
+    text-transform: uppercase;
   }
   .card-body {
     padding: 1rem;
