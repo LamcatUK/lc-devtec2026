@@ -22620,7 +22620,8 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
 }
 
 .portfolio-card {
-  background-color: var(--col-secondary-400);
+  background-color: var(--col-oxblood-400);
+  transition: background-color var(--transition), color var(--transition);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -22663,14 +22664,20 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
   font-size: var(--fs-500);
   font-weight: var(--fw-600);
   line-height: var(--lh-700);
+  color: var(--col-white);
+  transition: color var(--transition);
 }
 .portfolio-card .card-body div {
   font-size: var(--fs-350);
   line-height: var(--lh-normal);
-  color: var(--col-accent-900);
+  color: var(--col-white);
+  transition: color var(--transition);
 }
 .portfolio-card:hover {
-  background-color: var(--col-secondary-400);
+  background-color: var(--col-oxblood-400-40);
+}
+.portfolio-card:hover .card-body h2, .portfolio-card:hover .card-body .h2,
+.portfolio-card:hover .card-body div {
   color: var(--col-black);
 }
 .portfolio-card:hover .portfolio-card__image {
