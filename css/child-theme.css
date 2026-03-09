@@ -10,6 +10,7 @@
   --col-oxblood-400: #885053;
   --col-oxblood-400-20: #88505333;
   --col-oxblood-400-40: #88505366;
+  --swiper-theme-color: var(--col-brand-400);
   --col-accent-900-hsl: 211 9% 48%;
   --col-accent-900: hsl(var(--col-accent-900-hsl));
   --ff-body:
@@ -22620,7 +22621,6 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
 }
 
 .portfolio-card {
-  background-color: var(--col-oxblood-400);
   transition: background-color var(--transition), color var(--transition);
   height: 100%;
   display: flex;
@@ -22655,6 +22655,7 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
   text-transform: uppercase;
 }
 .portfolio-card .card-body {
+  background-color: var(--col-oxblood-400);
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -22673,7 +22674,7 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
   color: var(--col-white);
   transition: color var(--transition);
 }
-.portfolio-card:hover {
+.portfolio-card:hover .card-body {
   background-color: var(--col-oxblood-400-40);
 }
 .portfolio-card:hover .card-body h2, .portfolio-card:hover .card-body .h2,
