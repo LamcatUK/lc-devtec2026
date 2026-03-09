@@ -22621,7 +22621,6 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
 }
 
 .portfolio-card {
-  transition: background-color var(--transition), color var(--transition);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -22656,6 +22655,7 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
 }
 .portfolio-card .card-body {
   background-color: var(--col-oxblood-400);
+  transition: background-color var(--transition), color var(--transition);
   padding: 1rem;
   display: flex;
   flex-direction: column;
