@@ -10,26 +10,28 @@
     border-radius: 0;
     padding-left: 3rem;
     position: relative;
-    background-color: var(--col-secondary-400);
+    background-color: var(--col-oxblood-400-20);
     font-size: var(--fs-500);
     font-weight: var(--fw-medium);
     box-shadow: none;
-    color: var(--col-black);
+    color: var(--col-brand-400);
 
     &:hover {
-      color: var(--col-black);
+      color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
     }
 
-    &:focus {
+    &:focus,
+    &:hover {
       box-shadow: none;
       border: none;
-      color: var(--col-black);
+      background-color: var(--col-oxblood-400-40);
+      color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
     }
 
     &:not(.collapsed) {
-      background-color: var(--col-secondary-400);
+      background-color: var(--col-oxblood-400-40);
       box-shadow: none;
-      color: var(--col-black);
+      color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
     }
 
     &::after {

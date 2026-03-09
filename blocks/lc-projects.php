@@ -76,7 +76,7 @@ $block_id = ! empty( $block['id'] ) ? 'projects-swiper-' . $block['id'] : 'proje
 												<div class="project-card__pill"><?= esc_html( $ptype ); ?></div>
 											<?php endif; ?>
 										</div>
-										<div class="project-card__content pt-2 pb-5">
+										<div class="project-card__content pt-2 pb-4">
 											<h3 class="project-card__title mb-1"><?= get_the_title(); ?></h3>
 											<div class="project-card__location mb-1"><?php the_field( 'location', get_the_ID() ); ?></div>
 											<div class="project-card__details"><?php the_field( 'area', get_the_ID() ); ?> · GDV <?php the_field( 'gdv', get_the_ID() ); ?></div>

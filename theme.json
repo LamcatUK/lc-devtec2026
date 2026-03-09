@@ -30,6 +30,30 @@
           "origin": "theme"
         },
         {
+          "name": "brand-400",
+          "slug": "brand-400",
+          "color": "#102542",
+          "origin": "theme"
+        },
+        {
+          "name": "oxblood-400",
+          "slug": "oxblood-400",
+          "color": "#885053",
+          "origin": "theme"
+        },
+        {
+          "name": "oxblood-400-20",
+          "slug": "oxblood-400-20",
+          "color": "#88505333",
+          "origin": "theme"
+        },
+        {
+          "name": "oxblood-400-40",
+          "slug": "oxblood-400-40",
+          "color": "#88505366",
+          "origin": "theme"
+        },
+        {
           "name": "accent-500",
           "slug": "accent-500",
           "color": "hsl(336, 100%, 30%)",

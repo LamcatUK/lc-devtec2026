@@ -14,6 +14,12 @@ $col-grey: #fff0f0;
   --col-accent-400-hsl: 211 10% 53%; // #7b8794
   --col-accent-400: hsl(var(--col-accent-400-hsl));
 
+  --col-brand-400: #102542;
+
+  --col-oxblood-400: #885053;
+  --col-oxblood-400-20: #88505333; // 20% opacity
+  --col-oxblood-400-40: #88505366; // 40% opacity
+
   // --col-accent-400: #99003d;
   // --col-accent-500: hsl(336, 100%, 30%);
 

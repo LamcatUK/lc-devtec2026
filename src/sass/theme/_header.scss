@@ -34,12 +34,12 @@ header {
     padding: 0;
     @media (min-width: 992px) {
       &:hover {
-        color: var(--col-accent-400);
+        color: var(--col-brand-400);
         text-decoration: none;
       }
     }
     &:focus {
-      color: var(--col-accent-400);
+      color: var(--col-brand-400);
       text-decoration: none;
     }
   }
@@ -47,11 +47,11 @@ header {
   .contact-info {
     font-size: var(--fs-300);
     font-weight: var(--fw-300);
-    color: var(--col-accent-400);
+    color: var(--col-brand-400);
     a {
       font-size: var(--fs-300);
       font-weight: var(--fw-300);
-      color: var(--col-accent-400);
+      color: var(--col-brand-400);
       text-transform: initial !important;
     }
   }
@@ -83,7 +83,7 @@ header {
   .current_page_parent > .nav-link,
   .dropdown.current-page-ancestor > .nav-link,
   .dropdown.current-menu-item > .nav-link {
-    color: var(--col-accent-400);
+    color: color-mix(in srgb, var(--col-brand-400), var(--col-white) 40%);
   }
 
   // @media (max-width: 991px) {

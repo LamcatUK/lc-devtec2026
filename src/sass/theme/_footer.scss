@@ -1,11 +1,11 @@
 footer {
-  background-color: var(--col-accent-400);
+  background-color: var(--col-brand-400);
   color: var(--col-white);
 
   a {
     color: var(--col-white);
     &:hover {
-      color: var(--col-gold);
+      color: var(--col-white);
       opacity: 1;
     }
   }
@@ -19,7 +19,11 @@ footer {
   }
 
   .colophon {
-    background-color: var(--col-accent-900);
+    background-color: color-mix(
+      in srgb,
+      var(--col-brand-400),
+      var(--col-black) 10%
+    );
     font-size: var(--fs-300);
     color: #ffffffcc;
     a {

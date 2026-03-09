@@ -34,10 +34,10 @@ a {
 }
 
 main a:not([class]) {
-  color: var(--col-purple-400);
+  color: var(--col-brand-400);
   font-weight: var(--fw-600);
   &:hover {
-    color: var(--col-purple-900);
+    color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
   }
 }
 
@@ -71,7 +71,7 @@ a.anchor {
   color: var(--col-grey-400);
   margin-bottom: 0.5rem;
   a {
-    color: var(--col-red-600);
+    color: var(--col-brand-400);
   }
 }
 
@@ -93,14 +93,18 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   a {
-    color: var(--col-blue-400);
+    color: var(--col-oxblood-400);
     width: 40px;
     height: 40px;
     display: grid;
     place-content: center;
     transition: color var(--transition);
     &:hover {
-      color: var(--col-blue-900);
+      color: color-mix(
+        in srgb,
+        var(--col-oxblood-400) 80%,
+        var(--col-black) 20%
+      );
     }
   }
 }

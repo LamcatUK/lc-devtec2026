@@ -6,6 +6,10 @@
   --col-secondary-400: hsl(var(--col-secondary-400-hsl));
   --col-accent-400-hsl: 211 10% 53%;
   --col-accent-400: hsl(var(--col-accent-400-hsl));
+  --col-brand-400: #102542;
+  --col-oxblood-400: #885053;
+  --col-oxblood-400-20: #88505333;
+  --col-oxblood-400-40: #88505366;
   --col-accent-900-hsl: 211 9% 48%;
   --col-accent-900: hsl(var(--col-accent-900-hsl));
   --ff-body:
@@ -21921,7 +21925,7 @@ strong {
   left: 0;
   width: 8rem;
   height: 2px;
-  background-color: var(--col-accent-400);
+  background-color: var(--col-brand-400);
 }
 
 .has-x-large-font-size,
@@ -22027,13 +22031,14 @@ strong {
 }
 
 .button {
-  border-top: 2px solid var(--col-black);
-  border-bottom: 2px solid var(--col-black);
+  border-top: 2px solid var(--col-oxblood-400);
+  border-bottom: 2px solid var(--col-oxblood-400);
   font-size: var(--fs-350);
+  font-weight: var(--fw-600);
   text-transform: uppercase;
   transition: border-color var(--transition), color var(--transition);
   padding: 0.25rem 1.5rem;
-  color: var(--col-black);
+  color: var(--col-oxblood-400);
   display: inline-grid;
   justify-items: center;
 }
@@ -22051,8 +22056,8 @@ strong {
   white-space: nowrap;
 }
 .button:hover {
-  color: var(--col-accent-400);
-  border-color: var(--col-accent-400);
+  color: var(--col-oxblood-400);
+  border-color: var(--col-oxblood-400);
 }
 .button:hover span {
   letter-spacing: calc(var(--ls-900) * 5);
@@ -22098,24 +22103,24 @@ header a.nav-link {
 @media (min-width: 992px) {
   header a:hover,
   header a.nav-link:hover {
-    color: var(--col-accent-400);
+    color: var(--col-brand-400);
     text-decoration: none;
   }
 }
 header a:focus,
 header a.nav-link:focus {
-  color: var(--col-accent-400);
+  color: var(--col-brand-400);
   text-decoration: none;
 }
 header .contact-info {
   font-size: var(--fs-300);
   font-weight: var(--fw-300);
-  color: var(--col-accent-400);
+  color: var(--col-brand-400);
 }
 header .contact-info a {
   font-size: var(--fs-300);
   font-weight: var(--fw-300);
-  color: var(--col-accent-400);
+  color: var(--col-brand-400);
   text-transform: initial !important;
 }
 header .logo-container {
@@ -22144,7 +22149,7 @@ header .current_menu_item > .nav-link,
 header .current_page_parent > .nav-link,
 header .dropdown.current-page-ancestor > .nav-link,
 header .dropdown.current-menu-item > .nav-link {
-  color: var(--col-accent-400);
+  color: color-mix(in srgb, var(--col-brand-400), var(--col-white) 40%);
 }
 @media (min-width: 992px) {
   header .navbar-expand-lg {
@@ -22160,14 +22165,14 @@ header .dropdown.current-menu-item > .nav-link {
 }
 
 footer {
-  background-color: var(--col-accent-400);
+  background-color: var(--col-brand-400);
   color: var(--col-white);
 }
 footer a {
   color: var(--col-white);
 }
 footer a:hover {
-  color: var(--col-gold);
+  color: var(--col-white);
   opacity: 1;
 }
 footer ul.menu {
@@ -22178,7 +22183,7 @@ footer ul.fa-ul {
   margin-left: 1.5rem;
 }
 footer .colophon {
-  background-color: var(--col-accent-900);
+  background-color: color-mix(in srgb, var(--col-brand-400), var(--col-black) 10%);
   font-size: var(--fs-300);
   color: rgba(255, 255, 255, 0.8);
 }
@@ -22510,24 +22515,25 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
   border-radius: 0;
   padding-left: 3rem;
   position: relative;
-  background-color: var(--col-secondary-400);
+  background-color: var(--col-oxblood-400-20);
   font-size: var(--fs-500);
   font-weight: var(--fw-medium);
   box-shadow: none;
-  color: var(--col-black);
+  color: var(--col-brand-400);
 }
 .text-accordion .accordion-button:hover {
-  color: var(--col-black);
+  color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
 }
-.text-accordion .accordion-button:focus {
+.text-accordion .accordion-button:focus, .text-accordion .accordion-button:hover {
   box-shadow: none;
   border: none;
-  color: var(--col-black);
+  background-color: var(--col-oxblood-400-40);
+  color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
 }
 .text-accordion .accordion-button:not(.collapsed) {
-  background-color: var(--col-secondary-400);
+  background-color: var(--col-oxblood-400-40);
   box-shadow: none;
-  color: var(--col-black);
+  color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
 }
 .text-accordion .accordion-button::after {
   display: none;
@@ -22561,6 +22567,7 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
 .projects .project-card {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 .projects .project-card:hover .project-card__image {
   transform: scale(1.05);
@@ -22583,6 +22590,10 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
   border-radius: 100vw;
   text-transform: uppercase;
 }
+.projects .project-card__content {
+  padding-inline: 0.5rem;
+  background-color: var(--col-oxblood-400);
+}
 .projects .project-card__image {
   width: 100%;
   height: 100%;
@@ -22593,10 +22604,11 @@ select.form-control, .wpcf7 select.wpcf7-validation-errors,
 .projects .project-card__title {
   font-size: var(--fs-500);
   font-weight: var(--fw-600);
+  color: var(--col-white);
 }
 .projects .project-card__location, .projects .project-card__details {
   font-size: var(--fs-300);
-  color: var(--col-black);
+  color: var(--col-white);
 }
 
 .image-text-cards__card-image {
@@ -22730,11 +22742,11 @@ a {
 }
 
 main a:not([class]) {
-  color: var(--col-purple-400);
+  color: var(--col-brand-400);
   font-weight: var(--fw-600);
 }
 main a:not([class]):hover {
-  color: var(--col-purple-900);
+  color: color-mix(in srgb, var(--col-brand-400) 80%, var(--col-black) 20%);
 }
 
 a.noline {
@@ -22771,7 +22783,7 @@ a.anchor {
   margin-bottom: 0.5rem;
 }
 .breadcrumbs a {
-  color: var(--col-red-600);
+  color: var(--col-brand-400);
 }
 
 .reading {
@@ -22793,7 +22805,7 @@ a {
   flex-wrap: wrap;
 }
 .social_icons a {
-  color: var(--col-blue-400);
+  color: var(--col-oxblood-400);
   width: 40px;
   height: 40px;
   display: grid;
@@ -22801,7 +22813,7 @@ a {
   transition: color var(--transition);
 }
 .social_icons a:hover {
-  color: var(--col-blue-900);
+  color: color-mix(in srgb, var(--col-oxblood-400) 80%, var(--col-black) 20%);
 }
 
 .rounded-lg {

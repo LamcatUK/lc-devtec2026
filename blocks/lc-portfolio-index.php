@@ -20,8 +20,8 @@ defined( 'ABSPATH' ) || exit;
 				)
 			);
 
-			if ( $portfolio_query->have_posts() ) :
-				while ( $portfolio_query->have_posts() ) :
+			if ( $portfolio_query->have_posts() ) {
+				while ( $portfolio_query->have_posts() ) {
 					$portfolio_query->the_post();
 
 					// Get primary category from project_category taxonomy.
@@ -62,11 +62,11 @@ defined( 'ABSPATH' ) || exit;
 						</a>
 					</div>
 					<?php
-				endwhile;
+				}
 				wp_reset_postdata();
-			else :
+			} else {
 				echo '<p>No portfolio items found.</p>';
-			endif;
+			}
 			?>
 		</div>
 	</div>

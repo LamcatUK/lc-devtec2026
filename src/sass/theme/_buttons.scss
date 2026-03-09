@@ -21,15 +21,16 @@
 }
 
 .button {
-  border-top: 2px solid var(--col-black);
-  border-bottom: 2px solid var(--col-black);
+  border-top: 2px solid var(--col-oxblood-400);
+  border-bottom: 2px solid var(--col-oxblood-400);
   font-size: var(--fs-350);
+  font-weight: var(--fw-600);
   text-transform: uppercase;
   transition:
     border-color var(--transition),
     color var(--transition);
   padding: 0.25rem 1.5rem;
-  color: var(--col-black);
+  color: var(--col-oxblood-400);
   display: inline-grid;
   justify-items: center;
   &::before {
@@ -46,8 +47,8 @@
     white-space: nowrap;
   }
   &:hover {
-    color: var(--col-accent-400);
-    border-color: var(--col-accent-400);
+    color: var(--col-oxblood-400);
+    border-color: var(--col-oxblood-400);
     span {
       letter-spacing: calc(var(--ls-900) * 5);
     }

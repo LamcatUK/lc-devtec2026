@@ -6,6 +6,10 @@
   --col-secondary-400: hsl(var(--col-secondary-400-hsl));
   --col-accent-400-hsl: 211 10% 53%;
   --col-accent-400: hsl(var(--col-accent-400-hsl));
+  --col-brand-400: #102542;
+  --col-oxblood-400: #885053;
+  --col-oxblood-400-20: #88505333;
+  --col-oxblood-400-40: #88505366;
   --col-accent-900-hsl: 211 9% 48%;
   --col-accent-900: hsl(var(--col-accent-900-hsl));
   --ff-body:
