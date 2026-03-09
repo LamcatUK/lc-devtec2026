@@ -28,7 +28,43 @@ defined( 'ABSPATH' ) || exit;
 	if ( is_front_page() ) {
 		?>
 	<script type="application/ld+json">
-
+	{
+	"@context": "https://schema.org",
+	"@type": "LocalBusiness",
+	"name": "DevTec Properties",
+	"url": "https://www.devtec-properties.com",
+	"telephone": "+44 1737 881416",
+	"email": "info@devtec-properties.com",
+	"address": {
+		"@type": "PostalAddress",
+		"streetAddress": "85 Carpenters",
+		"addressLocality": "Billingshurst",
+		"addressRegion": "West Sussex",
+		"postalCode": "RH14 9RA",
+		"addressCountry": "GB"
+	},
+	"areaServed": {
+		"@type": "AdministrativeArea",
+		"name": "South East England"
+	},
+	"sameAs": [
+		"https://uk.linkedin.com/company/devtec-properties"
+	],
+	"openingHoursSpecification": [
+		{
+		"@type": "OpeningHoursSpecification",
+		"dayOfWeek": [
+			"https://schema.org/Monday",
+			"https://schema.org/Tuesday",
+			"https://schema.org/Wednesday",
+			"https://schema.org/Thursday",
+			"https://schema.org/Friday"
+		],
+		"opens": "09:00",
+		"closes": "17:00"
+		}
+	]
+	}
 	</script>
 		<?php
 	}
