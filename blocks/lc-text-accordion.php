@@ -37,11 +37,11 @@ $fg = ! empty( $block['textColor'] ) ? 'has-' . $block['textColor'] . '-color' :
 						?>
 					<div class="accordion-item">
 						<h2 class="accordion-header" id="heading<?= esc_attr( $index ); ?>">
-							<button class="accordion-button <?= ( 0 !== $index ) ? 'collapsed' : ''; ?>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= esc_attr( $index ); ?>" aria-expanded="<?= ( 0 === $index ) ? 'true' : 'false'; ?>" aria-controls="collapse<?= esc_attr( $index ); ?>">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= esc_attr( $index ); ?>" aria-expanded="<?= ( 0 === $index ) ? 'true' : 'false'; ?>" aria-controls="collapse<?= esc_attr( $index ); ?>">
 								<?= esc_html( get_sub_field( 'title' ) ); ?>
 							</button>
 						</h2>
-						<div id="collapse<?= esc_attr( $index ); ?>" class="accordion-collapse collapse <?= ( 0 === $index ) ? 'show' : ''; ?>" aria-labelledby="heading<?= esc_attr( $index ); ?>" data-bs-parent="#textAccordion">
+						<div id="collapse<?= esc_attr( $index ); ?>" class="accordion-collapse collapse" aria-labelledby="heading<?= esc_attr( $index ); ?>" data-bs-parent="#textAccordion">
 							<div class="accordion-body">
 								<?= wp_kses_post( get_sub_field( 'content' ) ); ?>
 							</div>
