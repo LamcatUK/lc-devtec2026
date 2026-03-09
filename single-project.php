@@ -51,7 +51,7 @@ $img = get_the_post_thumbnail_url( get_the_ID(), 'full' ) ?? null;
 			</div>
 		</div>
 	</article>
-	<section class="cta has-oxblood-400-40-background-color has-background-color">
+	<section class="cta has-oxblood-400-20-background-color has-background-color">
 	<div class="container py-5">
 		<h2 class="mb-5">Assessing a potential site or scheme?</h2>
 		<a href="/contact/" class="button"
