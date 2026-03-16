@@ -9,12 +9,12 @@ header {
 
   .navbar-toggler {
     i {
-      color: var(--col-accent-400);
+      color: var(--col-oxblood-400);
     }
   }
 
   .navbar > .container {
-    border-bottom: 1px solid var(--col-accent-400);
+    border-bottom: 1px solid var(--col-oxblood-400);
   }
 
   .navbar-nav {
@@ -24,7 +24,7 @@ header {
   a,
   a.nav-link {
     color: var(--col-black);
-    font-size: var(--fs-300);
+    font-size: var(--fs-500);
     font-weight: var(--fw-600);
     letter-spacing: var(--ls-900);
     transition: var(--transition);
@@ -32,14 +32,17 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     padding: 0;
+    padding-block: 0.5rem;
     @media (min-width: 992px) {
+      font-size: var(--fs-300);
+      padding-block: 0;
       &:hover {
-        color: var(--col-brand-400);
+        color: var(--col-oxblood-400);
         text-decoration: none;
       }
     }
     &:focus {
-      color: var(--col-brand-400);
+      color: var(--col-oxblood-400);
       text-decoration: none;
     }
   }
@@ -47,11 +50,11 @@ header {
   .contact-info {
     font-size: var(--fs-300);
     font-weight: var(--fw-300);
-    color: var(--col-brand-400);
+    color: var(--col-oxblood-400);
     a {
       font-size: var(--fs-300);
       font-weight: var(--fw-300);
-      color: var(--col-brand-400);
+      color: var(--col-oxblood-400);
       text-transform: initial !important;
     }
   }
@@ -83,7 +86,7 @@ header {
   .current_page_parent > .nav-link,
   .dropdown.current-page-ancestor > .nav-link,
   .dropdown.current-menu-item > .nav-link {
-    color: color-mix(in srgb, var(--col-brand-400), var(--col-white) 40%);
+    color: color-mix(in srgb, var(--col-oxblood-400), var(--col-white) 40%);
   }
 
   // @media (max-width: 991px) {

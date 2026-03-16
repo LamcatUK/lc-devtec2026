@@ -5,6 +5,9 @@
       .cls-1 {
         fill: #102542;
       }
+      .cls-2 {
+        fill: #8c8d5a;
+      }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
@@ -38,11 +41,11 @@
         <rect class="cls-1" x="172.1" y="172.1" width="17.21" height="103.26"/>
         <rect class="cls-1" x="206.52" y="172.1" width="17.21" height="103.26"/>
         <rect class="cls-1" x="240.94" y="172.1" width="17.21" height="103.26"/>
-        <rect class="cls-1" x="189.3" y="-51.63" width="17.21" height="120.47" transform="translate(206.51 -189.3) rotate(90)"/>
-        <rect class="cls-1" x="189.3" y="-17.21" width="17.21" height="120.47" transform="translate(240.93 -154.89) rotate(90)"/>
-        <rect class="cls-1" x="189.3" y="17.21" width="17.21" height="120.47" transform="translate(275.35 -120.47) rotate(90)"/>
-        <rect class="cls-1" x="189.3" y="51.63" width="17.21" height="120.47" transform="translate(309.77 -86.05) rotate(90)"/>
-        <rect class="cls-1" x="189.3" y="86.05" width="17.21" height="120.47" transform="translate(344.19 -51.63) rotate(90)"/>
+        <rect class="cls-2" x="189.3" y="-51.63" width="17.21" height="120.47" transform="translate(206.51 -189.3) rotate(90)"/>
+        <rect class="cls-2" x="189.3" y="-17.21" width="17.21" height="120.47" transform="translate(240.93 -154.89) rotate(90)"/>
+        <rect class="cls-2" x="189.3" y="17.21" width="17.21" height="120.47" transform="translate(275.35 -120.47) rotate(90)"/>
+        <rect class="cls-2" x="189.3" y="51.63" width="17.21" height="120.47" transform="translate(309.77 -86.05) rotate(90)"/>
+        <rect class="cls-2" x="189.3" y="86.05" width="17.21" height="120.47" transform="translate(344.19 -51.63) rotate(90)"/>
       </g>
     </g>
   </g>
