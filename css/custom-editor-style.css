@@ -7,9 +7,9 @@
   --col-accent-400-hsl: 211 10% 53%;
   --col-accent-400: hsl(var(--col-accent-400-hsl));
   --col-brand-400: #102542;
-  --col-oxblood-400: #8c8d5a;
-  --col-oxblood-400-20: #8c8d5a33;
-  --col-oxblood-400-40: #8c8d5a66;
+  --col-oxblood-400: #8c7a3e;
+  --col-oxblood-400-20: #8c7a3e33;
+  --col-oxblood-400-40: #8c7a3e66;
   --swiper-theme-color: var(--col-brand-400);
   --col-accent-900-hsl: 211 9% 48%;
   --col-accent-900: hsl(var(--col-accent-900-hsl));
